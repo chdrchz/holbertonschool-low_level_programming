@@ -4,13 +4,14 @@
  *
  * x is my placeholder for every letter in the alphabet
  * Return: 0
- */
+*/
 int main(void)
 {
-	char x
+	char c;
 
-	for(int x = 'a'; x <= 'z'; x++)
-		putchar(x);
-		putchar('\n');
-	return(0);
+	for (c = 'a'; c <= 'z'; ++c)
+		putchar(c);
+	putchar('\n');
+
+	return (0);
 }
