@@ -5,16 +5,18 @@
  *
  * Return: 0
  */
-int _putchar(char c)
+int main(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-
+	_putchar('_');
+	_putchar('p');
+	_putchar('r');
+	_putchar('i');
+	_putchar('n');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('r');
 	return (0);
 }
