@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - what does this do?
+ * main - function that prints all numbers in base10 followed by a new line
  *
- * Return: ?
+ * Return: 0
  */
 int main(void)
 {
