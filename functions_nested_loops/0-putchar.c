@@ -1,11 +1,11 @@
-#include <unistd.h>
+#include "main.h"
 #include <stdio.h>
 /**
- * main - what does this do?
+ * main - this function prints _putchar
  *
  * Return: 0
  */
-int main(void)
+int _putchar(char c)
 {
 	putchar('_');
 	putchar('p');
@@ -16,7 +16,5 @@ int main(void)
 	putchar('a');
 	putchar('r');
 
-	putchar('\n');
-
-	return (0);
+return (0);
 }
