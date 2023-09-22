@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * int _islower - description
  *
