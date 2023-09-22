@@ -4,10 +4,8 @@
  *
  * Return: the calculated absolute variable
  */
-int _abs(int)
+int _abs(int x)
 {
-	int x;
-
 	if (x > 0)
 	{
 		return (x);
@@ -18,6 +16,6 @@ int _abs(int)
 	}
 	else
 	{
-		return (x * -1)
+		return (x * -1);
 	{
 }
