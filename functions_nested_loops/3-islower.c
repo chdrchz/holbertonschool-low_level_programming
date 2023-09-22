@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _islower - this function returns a boolean if true
+ * _islower - this function returns a boolean if true
  * @x: variable
  * Return: 1 or 0
  */
