@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * int _islower - description
+ * int _islower - this function returns a boolean if true
  *
- * Return: ?
+ * Return: 1 or 0
  */
 int _islower(int x)
 {
