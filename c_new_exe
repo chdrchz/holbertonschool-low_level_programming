@@ -1,0 +1,8 @@
+#!/bin/bash
+echo '#include <stdio.h>
+/**
+ * main - what does this do?
+ *
+ * Return: ?
+ */' > $1
+vi $1
