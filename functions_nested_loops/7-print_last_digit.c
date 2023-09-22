@@ -1,15 +1,14 @@
 #include "main.h"
 /**
  * print_last_digit - print last digit twice
- *
- * Return: x % 10
+ * @x: variable that determines last digit
+ * Return: last digit of number
  */
 int print_last_digit(int x)
 {
 	int last_dig;
 
 	last_dig = x % 10;
-
 	if (last_dig < 0)
 	{
 		last_dig *= -1;
