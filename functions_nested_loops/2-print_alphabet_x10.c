@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - what does this do?
+ * print_alphabet - prints the alphabet 10 times
  *
- * Return: ?
+ * Return: nothing
  */
 void print_alphabet_x10(void)
 {
