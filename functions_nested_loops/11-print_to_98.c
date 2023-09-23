@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * print_to_98 - prints all natural numbers from a starting number
  *
@@ -8,18 +8,18 @@ void print_to_98(int x)
 {
 	if (x >=98)
 	{
-		while (n > 98)
+		while (x > 98)
 		{
-			printf("%d ", n--);
+			printf("%d ", x--);
 		}
-		printf("%d /n", n);
+		printf("%d /n", x);
 	}
 	else (x <=98)
 	{ 
-		while (n < 98) 
+		while (x < 98) 
 		{ 
-			printf("%d ", n++); 
+			printf("%d ", x++); 
 		} 
-		printf("%d /n", n); 
+		printf("%d /n", x); 
 	}
 }
