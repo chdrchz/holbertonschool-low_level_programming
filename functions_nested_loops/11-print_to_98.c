@@ -12,7 +12,7 @@ void print_to_98(int x)
 		{
 			printf("%d ", x--);
 		}
-		printf("%d \n", x);
+		printf("%d\n", x);
 	}
 	else
 	{ 
@@ -20,6 +20,6 @@ void print_to_98(int x)
 		{ 
 			printf("%d ", x++); 
 		} 
-		printf("%d \n", x); 
+		printf("%d\n", x); 
 	}
 }
