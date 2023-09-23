@@ -4,10 +4,7 @@
  *
  * Return: ?
  */
-int add(int, int)
-{
-	int x;
-	int c;
-
+int add(x, c)
+}
 	return (x + c);
 }
