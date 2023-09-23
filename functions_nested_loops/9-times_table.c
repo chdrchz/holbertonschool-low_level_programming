@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * times_table - this prints the 9 times table 
- * 
- * Return: nothing 
+ * times_table - this prints the 9 times table
+ *
+ * Return: nothing
  */
 void times_table(void)
 {
@@ -28,10 +28,10 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(','); 
-				_putchar(' '); 
-				_putchar(m / 10 + '0'); 
-				_putchar(m % 10 + '0'); 
+				_putchar(',');
+				_putchar(' ');
+				_putchar(m / 10 + '0');
+				_putchar(m % 10 + '0');
 			}
 		}
 		_putchar('\n');
