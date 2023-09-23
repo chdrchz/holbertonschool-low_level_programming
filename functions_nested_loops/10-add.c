@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * add - what does this do?
+ * add - adds two integers together
  *
- * Return: ?
+ * Return: the addition of int x and int n
  */
-int add(x, c)
-}
-	return (x + c);
+int add(int x, int n)
+{	
+	_putchar(x + n);
+	return (x + n);
 }
