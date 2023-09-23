@@ -6,6 +6,5 @@
  */
 int add(int x, int n)
 {	
-	_putchar(x + n);
 	return (x + n);
 }
