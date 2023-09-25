@@ -13,9 +13,11 @@ int main(void)
 		for (y = x + 1; y <= 99; y++)
 		{
 			putchar((x / 10) + '0');
+			putchar(' ');
 			putchar((x % 10) + '0');
 			putchar(' ');
 			putchar((y / 10) + '0');
+			putchar(' ');
 			putchar((y % 10) + '0');
 
 			if (x == 98 && y == 99)
