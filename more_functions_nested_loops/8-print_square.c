@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_square - printing a square based on input
- *
+ * @size: size of the box
  * Return: 0
  */
 void print_square(int size)
@@ -20,8 +20,8 @@ void print_square(int size)
 			_putchar('\n');
 		}
 	}
-	else 
+	else
 	{
 		_putchar('\n');
-	}	
+	}
 }
