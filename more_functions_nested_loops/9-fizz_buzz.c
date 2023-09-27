@@ -12,6 +12,8 @@ int main(void)
 
 	for (x = 1; x < 101; x++)
 	{
+		putchar('\n');
+
 		if ((x % 3) == 0)
 		{
 			printf("Fizz ");
@@ -28,7 +30,6 @@ int main(void)
 		{
 			printf("%d ", x);
 		}
-		putchar('\n');
 	}
 	return (0);
 }
