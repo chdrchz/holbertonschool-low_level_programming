@@ -1,7 +1,7 @@
 #!/bin/bash
-echo '#include <stdio.h>
+echo '#include ""
 /**
- * main - what does this do?
+ * f - ?
  *
  * Return: ?
  */' > $1
