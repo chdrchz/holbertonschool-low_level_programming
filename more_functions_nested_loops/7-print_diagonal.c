@@ -23,8 +23,13 @@ void print_diagonal(int n)
 		if (b == -1)
 		
 			continue;
+
 		_putchar('\n');
 	}
+
 	}
-	_putchar('\n');
+	else if (n <= 0)
+	{
+		_putchar('\n');
+	}
 }
