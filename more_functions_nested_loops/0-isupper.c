@@ -5,7 +5,7 @@
  *
  * Return: 1 if it is an uppercase letter, 0 if it is not
  */
-int isupper(int c)
+int _isupper(int c)
 {
 	if (c <= 'A' || c >= 'Z') 
 	{
