@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_triangle - prints triangle
- *
+ * @size: input size of triangle 
  * Return: 0
  */
 void print_triangle(int size)
