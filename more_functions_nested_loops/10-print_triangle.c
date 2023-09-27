@@ -28,8 +28,10 @@ void print_triangle(int size)
 			if (h == size)
 
 				continue;
-		
+			
+			_putchar('\n');
 		}
 	}
+
 	_putchar('\n');
 }
