@@ -1,5 +1,5 @@
 #include "main.h"
-#include "2-strlen.c"
+#include "2_strlen.c"i
 /**
  * puts_half - prints half of the string
  * @str: variable is a pointer to a string
