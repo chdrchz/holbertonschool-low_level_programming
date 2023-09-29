@@ -20,7 +20,9 @@ int _atoi(char *s)
 		if (*s == '-')
 		{
 			sign = (sign * -1);
+			s++;
 		}
+		s++;
 	}
 	
 	while (*s >= '0' && *s <= '9' )
