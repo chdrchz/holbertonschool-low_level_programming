@@ -1,4 +1,6 @@
 #include "main.h"
+#include "2-strlen.c"
+#include <stdio.h>
 /**
  * *_strcpy - copies a string from source to destination
  * @dest: destination
