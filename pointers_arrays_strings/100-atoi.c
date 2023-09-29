@@ -1,5 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+
+#define CUSTOM_INT_MAX 2147483647
+#define CUSTOM_INT_MIN (-2147483647 - 1)
 /**
  * _atoi - returns the ASCII conversion of a string
  * @s: pointer to a string
