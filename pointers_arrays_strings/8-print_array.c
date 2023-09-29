@@ -3,7 +3,8 @@
 #include <stdio.h>
 /**
  * print_array - printing an array
- *
+ * @a: pointer to an array
+ * @n: inputted integer to calculate size
  * Return: void
  */
 void print_array(int *a, int n)
