@@ -12,12 +12,15 @@ int _atoi(char *s)
 	
 	while (*s == ' ' || *s == '\t')
 	{
-		s++;
-	}
-
-	if (*s == '-')
-	{
-		sign = -1;
+		if (*s == '-')
+		{
+			sign = -1;
+			s++;
+		}
+		else if (*s == '+')
+		{
+			s++;
+		}
 		s++;
 	}
 	
