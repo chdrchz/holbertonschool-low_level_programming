@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * print_array - printing an array
  *
