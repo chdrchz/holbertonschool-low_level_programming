@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * _atoi - returns the ASCII conversion of a string
- *
- * Return: int
+ * @s: pointer to a string
+ * Return: i * sign
  */
 int _atoi(char *s)
 {
@@ -15,7 +15,7 @@ int _atoi(char *s)
 		s++;
 	}
 
-	if (*s == '-');
+	if (*s == '-')
 	{
 		sign = -1;
 		s++;
