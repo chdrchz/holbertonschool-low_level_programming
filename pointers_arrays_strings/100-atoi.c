@@ -36,7 +36,6 @@ int _atoi(char *s)
 
 	while (*s < '0' && *s > '9')
 	{
-		i = i * 10 + (*s - '0');
 		s++;
 	}
 	}
