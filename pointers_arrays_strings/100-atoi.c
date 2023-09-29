@@ -1,8 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
-#define CUSTOM_INT_MAX 2147483647
-#define CUSTOM_INT_MIN (-2147483647 - 1)
 /**
  * _atoi - returns the ASCII conversion of a string
  * @s: pointer to a string
@@ -10,38 +7,39 @@
  */
 int _atoi(char *s)
 {
-	int i = 0;
-	int sign = 1;
-	
-	while (*s)
-	{
+	int i, d, n, len, f, digit;
 
-	while (*s == ' ' || *s == '\t')
-	{
-		s++;
-	}
+	i = 0;
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
 
-	if (*s == '-')
-	{
-		sign = -1;
-		s++;
-	}
-	else if (*s == '+')
-	{
-		s++;
-	}
-	
-	while (*s >= '0' && *s <= '9' )
-	{
-		i = i * 10 + (*s - '0');
-		s++;
-	}
+	while (s[len] != '\0')
+		len++;
 
-	while (*s < '0' && *s > '9')
+	while (i < len && f == 0)
 	{
-		s++;
-	}
+		if (s[i] == '-')
+			++d;
+
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
+		}
+		i++;
 	}
 
-	return (i * sign);
+	if (f == 0)
+		return (0);
+
+	return (n);
 }
