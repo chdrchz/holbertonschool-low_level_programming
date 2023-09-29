@@ -10,6 +10,9 @@ int _atoi(char *s)
 	int i = 0;
 	int sign = 1;
 	
+	while (*s)
+	{
+
 	while (*s == ' ' || *s == '\t')
 	{
 		s++;
@@ -35,6 +38,7 @@ int _atoi(char *s)
 	{
 		i = i * 10 + (*s - '0');
 		s++;
+	}
 	}
 
 	return (i * sign);
