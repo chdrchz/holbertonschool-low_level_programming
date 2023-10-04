@@ -13,7 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; i < n && src[i]; i++)
 	{
-		*dest = src[i];
+		dest[dest_len] = src[i];
 	}
 
 	return (dest);
