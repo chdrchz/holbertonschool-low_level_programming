@@ -17,7 +17,7 @@ char *cap_string(char *k)
 	{
 		j = 0;
 
-		while (i < cspc)
+		while (j < cspc)
 		{
 			if ((i == 0 || k[i] - 1 == spc[j]) && (k[i] >= 97 && k[i] <= 122))
 			{
