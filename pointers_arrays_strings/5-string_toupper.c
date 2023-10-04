@@ -6,7 +6,7 @@
  *
  * Return: uppercase value
  */
-char *string_toupper(char *p)	
+char *string_toupper(char *p)
 {
 	int i = 0;
 
