@@ -5,21 +5,22 @@
  *
  * Return: char
  */
-
-int _strlen(char *s);
-
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int dest_len;
-	dest_len = _strlen(dest);
-
-	for (i = 0; src[i] != '\0'; i++)
+	char *ptr = dest;
+	
+	while (*ptr != '\0')
 	{
-		dest[dest_len + i] = src[i]; 
+		ptr++;
 	}
 
-	dest[dest_len + i] = '\0';
-
+	while (*src != '\0')
+	{
+		*ptr = *src;
+		ptr++;
+		src++;
+		*ptr = '\0';
+	}
+	
 	return (dest);
 }
