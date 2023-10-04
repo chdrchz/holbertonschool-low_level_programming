@@ -2,33 +2,37 @@
 #include <stdio.h>
 /**
  * *cap_string - capitalizes the first letter of a word in a string
- * @k: string variable
+ * @str: string variable
  *
  * Return: k (the capitalized string)
  */
-char *cap_string(char *k)
+char *cap_string(char *str)
 {
-	int i = 0;
-	int j;
-	int cspc = 13;
-	int spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+	int index = 0;
 
-	while (k[i])	
+	while (str[index])
 	{
-		j = 0;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
 
-		while (j < cspc)
-		{
-			if ((i == 0 || k[i] - 1 == spc[j]) && (k[i] >= 97 && k[i] <= 122))
-			{
-				k[i] -= 32;
-			}
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
 
-			j++;
-		}
-	i++;
-	
+		index++;
 	}
 
-	return (k);
+	return (str);
 }
