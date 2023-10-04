@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 #include <stdio.h>
 /**
  * *_strncat - concatonate 2 strings at n bytes
