@@ -6,20 +6,26 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
+	char *bHaystack;
+	char *bNeedle;
+
 	while (*haystack != '\0')
 	{
+		bHaystack = haystack;
+		bNeedle = needle;
 
-		while (*haystack != '\0' && *needle != '\0' && *haystack == *needle)
+		while (*haystack != '\0' && *bNeedle != '\0' && *haystack == *bNeedle)
 		{
 			haystack++;
-			needle++;
-		}
-		if (*needle == '\0')
-		{
-			return haystack;
+			bNeedle++;
 		}
 
-		haystack = haystack + 1;
+		if (!*bNeedle)
+		{
+			return (bHaystack);
+		}
+
+		haystack = bHaystack + 1;
 	}
 
 	return (0);
