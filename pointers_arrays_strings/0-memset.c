@@ -8,7 +8,8 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
-	char mem[n];
+	unsigned char byteValue = (unsigned char)b;
+	unsigned char bytePtr = (unsigned char *)s;
 
 	if (s == NULL || n == 0)
 	{
