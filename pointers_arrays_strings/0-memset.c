@@ -1,9 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *_memset - ?
+ * *_memset - stores memory from a variable
+ * @s: pointer to a char
+ * @b: location for memory to be stored
+ * @n: byte size
  *
- * Return: ?
+ * Return: pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -14,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 
-	return s;
+	return (s);
 }
