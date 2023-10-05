@@ -17,12 +17,11 @@ void print_chessboard(char (*a)[8])
 			'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'};
 	
 	int i;
-	int position;
 	
-	position = sizeof(board)/sizeof(board[0]);
+	a = sizeof(board)/sizeof(board[0]);
 
 	for (i = 0; i < position; i++)
 	{
-		_putchar(board[position]);
+		_putchar(board[a]);
 	}
 }
