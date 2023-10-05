@@ -7,21 +7,21 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	char board[100] = {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r',
-			'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
-			' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
-			' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
-			' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
-			' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
-			'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
-			'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'};
-	
-	int i;
-	
-	a = sizeof(board)/sizeof(board[0]);
+	unsigned int i, j;
 
-	for (i = 0; i < position; i++)
+	i = 0;
+
+	while (i < 8)
 	{
-		_putchar(board[a]);
+		j = 0;
+
+		while (j < 8)
+		{
+			_putchar(a[i][j]);
+			j++;
+		}
+
+		_putchar('\n');
+		i++;
 	}
 }
