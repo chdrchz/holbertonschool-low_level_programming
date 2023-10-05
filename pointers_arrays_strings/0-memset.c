@@ -7,18 +7,12 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
-	unsigned char byteValue = (unsigned char)n;
-	unsigned char bytePtr = (unsigned char *)s;
+	unsigned int i;
 
-	if (s == NULL || n == 0)
+	for (i = 0; i < n; i++)
 	{
-		return NULL;
+		s[i] = b;
 	}
 
-	for (i = 0; i < byteValue; i++)
-	{
-		bytePtr[i] = bytePtr[b];
-		i++;
-	}
+	return s;
 }
