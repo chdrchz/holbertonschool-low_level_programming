@@ -9,6 +9,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i; 
 	int j;
+	char tmp;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -23,6 +24,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			break;
 		}
+		tmp = accept[j];
 	}
-	return *(i);
+	return (tmp);
 }
