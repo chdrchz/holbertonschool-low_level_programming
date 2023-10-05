@@ -17,7 +17,7 @@ void print_chessboard(char (*a)[8])
 			'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'};
 	
 	int i;
-	char position;
+	int position;
 	
 	position = sizeof(board)/sizeof(board[0]);
 
@@ -25,6 +25,4 @@ void print_chessboard(char (*a)[8])
 	{
 		_putchar(board[position]);
 	}
-
-	return (0);
 }
