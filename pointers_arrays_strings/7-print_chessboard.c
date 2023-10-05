@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_chessboard - prints chessboard
- *
+ * @a: row of 2D array
  * Return: void
  */
 void print_chessboard(char (*a)[8])
