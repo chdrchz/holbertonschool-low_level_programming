@@ -18,11 +18,11 @@ void print_diagsums(int *a, int size)
 
 		while (j < size)
 		{
-			printf("%d", a[i][j]);
+			_putchar(*a[i][j]);
 			j++;
 		}
 
-		_putchar('\n')
+		_putchar('\n');
 		i++;
 	}
 
