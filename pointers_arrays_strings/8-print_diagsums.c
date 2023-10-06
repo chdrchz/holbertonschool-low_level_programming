@@ -23,4 +23,6 @@ void print_diagsums(int *a, int size)
 			sum2 += a[i];
 		}
 	}
+	_putchar(sum1);
+	_putchar(sum2);
 }
