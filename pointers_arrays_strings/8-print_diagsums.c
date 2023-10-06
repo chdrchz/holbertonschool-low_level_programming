@@ -8,27 +8,19 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i;
+	int sum1 = 0;
+	int sum2 = 0;
 
-	i = 0;
-	
-	while (i < size)
+	for (i = 0; i < size * size; i++)
 	{
-		j = 0;
-
-		while (j < size)
+		if (i % (size + 1) == 0)
 		{
-			_putchar(a[i][j]);
-			j++;
+			sum1 += a[i];
 		}
-
-		_putchar('\n');
-		i++;
-	}
-
-	for (i = 0; i < size; i++)
-	{
-		sum = sum + a[i][i];
-		size = size + a[i][size - i - 1]
+		if (i % (size - 1) == 0 && i != 0 && i != (size - 1) * size)
+		{
+			sum2 += a[i];
+		}
 	}
 }
