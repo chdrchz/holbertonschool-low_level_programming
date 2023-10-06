@@ -6,30 +6,18 @@
  *
  * Return: void
  */
-void print_diagsums(int *a, int size)
-{
+void print_diagsums(int *a, int size) {
+	
 	int i;
-	int j;
 	int sum1 = 0;
 	int sum2 = 0;
 
-	for (i = 0; i < size * size; i++)
+	for (i = 0; i < size; i++)
 	{
-		if (i % (size + 1) == 0)
-		{
-			sum1 += a[i];
-		}	
-	}
-	
-	for (j = 0; j < size; j++)
-	{
-		if (i != j)
-		{
-			sum2 += a[i];
-		}
+		sum1 += a[i * size + i];
+		sum2 += a[i * size + (size - 1 - i)];
 	}
 
 	printf("%d, ", sum1);
 	printf("%d", sum2);
 }
-
