@@ -18,7 +18,7 @@ void print_diagsums(int *a, int size)
 
 		while (j < size)
 		{
-			_putchar(*a[i][j]);
+			_putchar(a[i][j]);
 			j++;
 		}
 
