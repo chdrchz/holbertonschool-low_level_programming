@@ -25,7 +25,7 @@ void print_diagsums(int *a, int size)
 	{
 		if (i != j)
 		{
-			sum2 += a[i * size + j];
+			sum2 += a[i];
 		}
 	}
 
