@@ -7,7 +7,7 @@
  * @size: size of array
  * Return: void
  */
-void print_diagsums(int *a, int size) 
+void print_diagsums(int *a, int size)
 {
 
 	int i;
