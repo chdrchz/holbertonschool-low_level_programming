@@ -12,12 +12,12 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size * size; i++)
 	{
-		if (i % (size + 1) == 0)
+		if (i % size == 0)
 		{
 			sum1 += a[i];
 		}
 
-		if (i % (size - 1) == 0 && i != 0 && i != (size - 1) * size)
+		if ((i + 1) % (size - 1) == 0)
 		{
 			sum2 += a[i];
 		}
