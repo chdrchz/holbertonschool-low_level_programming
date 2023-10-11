@@ -12,9 +12,13 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	else
+	else if (divider <= num - 1)
+	{
+		return (0);
+	}
+	else 
 	{
 		return (1);
 	}
-	return(is_prime_number(n + 1));
+	return(is_prime_number(n));
 }
