@@ -9,7 +9,7 @@
 int _sqrt_recursion(int n)
 {
 	float epsilon = 1e-9;
-	float prev;
+	float prev = 0;
 	float next = (prev + n / prev) / 2;
 
 	if (fabs(next - prev) < epsilon * next)
