@@ -6,22 +6,30 @@
  * @n: input int
  * Return: square root
  */
+int _sqrt_recursion_helper(int n, int num)
+{
+	if (num * num > n)
+	{
+		return (-1);
+	}
+	else if (num * num == n)
+	{
+		return (num);
+	}
+	else 
+	{
+		return (_sqrt_recursion_helper(n, num));
+	}
+}
+
 int _sqrt_recursion(int n)
 {
-	int num = 1;
-
 	if (n < 0)
 	{
 		return (-1);
 	}
-	else if (n == 0)
-	{
-		return (0);
-	}
 	else 
 	{
-		n = n - num;
-		num = num + 2;
+		return (_sqrt_recursion_helper(n, 1));
 	}
-	return (1 + _sqrt_recursion(n));
 }
