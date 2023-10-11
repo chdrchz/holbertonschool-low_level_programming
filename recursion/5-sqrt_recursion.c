@@ -33,6 +33,8 @@ int _sqrt_recursion_helper(int num, int root)
 
 int _sqrt_recursion(int n)
 {
+	int root = 0;
+	
 	if (n < 0)
 	{
 		return (-1);
