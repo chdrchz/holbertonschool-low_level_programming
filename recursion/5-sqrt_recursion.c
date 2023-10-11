@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <math.h>
+#include <float.h>
 #include "main.h"
 /**
  * _sqrt_recursion - calculates the square root recursively
