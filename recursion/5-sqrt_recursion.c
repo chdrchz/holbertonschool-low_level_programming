@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	}
 
-	est = n;
+	int est = n;
 	new_est = 0.5 * (est + n / est);
 
 	return (_sqrt_recursion(n));
