@@ -2,7 +2,8 @@
 #include "main.h"
 /**
  * _pow_recursion - prints a number to the power of another number recursively
- *
+ * @x: int x
+ * @y: int y (power)
  * Return: the power of a number to a number
  */
 int _pow_recursion(int x, int y)
@@ -17,7 +18,7 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	else 
+	else
 	{
 		p = x * _pow_recursion(x, y - 1);
 	}
