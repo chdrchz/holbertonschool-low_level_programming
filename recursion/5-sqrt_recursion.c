@@ -8,13 +8,13 @@
  */
 int _sqrt_recursion(int n)
 {
-	float epsilon = 1e-9;
-	float prev = 0;
+	float prev = 1;
 	float next = (prev + n / prev) / 2;
+	float epsilom = 1e-9;
 
-	if (fabs(next - prev) < epsilon * next)
+	if (fabs(next - prev) < epsilom * next)
 	{
 		return (next);
 	}
-	return (_sqrt_recursion(n));
+	return (_sqrt_recursion(n, next));
 }
