@@ -18,5 +18,5 @@ int _sqrt_recursion(int n)
 	est = n;
 	new_est = 0.5 * (est + n / est);
 
-	return (_sqrt_recursion(n));
+	return (_sqrt_recursion(new_est));
 }
