@@ -6,20 +6,22 @@
  * @n: input int
  * Return: square root
  */
-int _sqrt_helper(int n, float next);
-
 int _sqrt_recursion(int n)
 {
-	_sqrt_helper(int n, float next)
-	{
-		float prev = 1;
-		next = (prev + n / prev) / 2;
-		float epsilom = 1e-9;
+	static int num = 1;
 
-		if (fabs(next - prev) < epsilom * next)
-		{	
-			return (next);
-		}
-		return (n, next);
+	if (n < 0)
+	{
+		return (-1);
 	}
+	else if (n == 0)
+	{
+		return (0);
+	}
+	else 
+	{
+		n = n - num;
+		num = num + 2;
+	}
+	return (1 + _sqrt_recursion(n));
 }
