@@ -16,7 +16,7 @@ int pal_palindrome(char *t, int start, int end)
 	{
 		return (1);
 	}
-	if (s[start] != s[end])
+	if (*s[start] != *s[end])
 	{
 		return (0);
 	}
