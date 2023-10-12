@@ -5,7 +5,7 @@ int pal_palindrome(char *start, char *end);
 int is_palindrome(char *s);
 
 /**
- * pal_palindrome - determines if the string is a palindrome recursively (helper)
+ * pal_palindrome - determines if the string is a palindrome (helper)
  * @start: pointer to start of the string
  * @end: pointer to end of the string
  * Return: 1 if the string is a palindrome
