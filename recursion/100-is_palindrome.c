@@ -8,7 +8,7 @@
 
 int pal_palindrome(char *s, int start, int end);
 int is_palindrome(char *s);
-int strlen(const char *s);
+int strlen(char *s);
 
 int pal_palindrome(char *t, int start, int end)
 {
