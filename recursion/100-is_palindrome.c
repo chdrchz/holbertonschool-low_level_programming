@@ -1,12 +1,15 @@
 #include "main.h"
 #include <string.h>
-/**
- * is_palindrome - determines if the string is a palindrome recursively
- *
- * Return: 1 if the string is a palindrome
- */
+
 int pal_palindrome(char *start, char *end);
 int is_palindrome(char *s);
+
+/**
+ * pal_palindrome - determines if the string is a palindrome recursively (helper)
+ * @start: pointer to start of the string
+ * @end: pointer to end of the string
+ * Return: 1 if the string is a palindrome
+ */
 
 int pal_palindrome(char *start, char *end)
 {
@@ -20,6 +23,12 @@ int pal_palindrome(char *start, char *end)
 	}
 	return (pal_palindrome(start + 1, end - 1));
 }
+
+/**
+ * is_palindrome - determines if the string is a palindrome recursively
+ * @s: pointer to a string
+ * Return: 1 if the string is a palindrome
+ */
 
 int is_palindrome(char *s)
 {
