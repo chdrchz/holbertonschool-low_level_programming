@@ -5,6 +5,10 @@
  * Return: 1 if the string is a palindrome
  */
 
+int pal_palindrome(char *s, int start, int end);
+int is_palindrome(char *s);
+int strlen(s);
+
 int pal_palindrome(char *s, int start, int end)
 {
 	if (start == end)
