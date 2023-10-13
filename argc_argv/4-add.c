@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		sum_Of_Numbers = sum_Of_Numbers + number;
+		sum_Of_Numbers += number;
 	}
 	printf("%d\n", sum_Of_Numbers);
 
