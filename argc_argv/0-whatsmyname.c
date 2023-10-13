@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints all arguments
  *
  * Return: void
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int counter;
 
@@ -12,5 +13,5 @@ void main(int argc, char *argv[])
 	{
 		printf("%s", argv[counter]);
 	}
-	return (0);
+	printf("\n");
 }
