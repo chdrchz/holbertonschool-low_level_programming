@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		}
 		sum_Of_Numbers = sum_Of_Numbers + number;
 	}
-	printf("%d", sum_Of_Numbers);
+	printf("%d\n", sum_Of_Numbers);
 
 	return (0);
 }
