@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int number_One, number_Two;
+	int number_One, number_Two, result_Of_Mult;
 	
 	if (argc != 3)
         {
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	number_One = atoi(argv[1]);
         number_Two = atoi(argv[2]);
 
-        int result_Of_Mult = number_One * number_Two;
+        result_Of_Mult = number_One * number_Two;
 	
 	printf("%d\n", result_Of_Mult);
 	
