@@ -6,15 +6,9 @@
  * @argv: array of strings
  * Return: void
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int counter;
-
-	for (counter = 0; counter < argc; counter++)
-	{
-		printf("%d", argv[argc]);
-	}
-	printf("\n");
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
