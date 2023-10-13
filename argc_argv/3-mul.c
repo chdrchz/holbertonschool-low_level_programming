@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int number_One = argv[1];
-	int number_Two = argv[2];
+	int number_One = atoi(argv[1]);
+	int number_Two = atoi(argv[2]);
 
 	printf("%d * %d\n", number_One, number_Two);
 	
