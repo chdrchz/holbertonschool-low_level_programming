@@ -12,4 +12,5 @@ void main(int argc, char *argv[])
 	{
 		printf("%s", argv[counter]);
 	}
+	return (0);
 }
