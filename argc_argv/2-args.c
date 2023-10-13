@@ -1,8 +1,8 @@
 #include <stdlib.h>
 /**
- * main - prints all arguments passed to it
- * @argc: number of arguments passed
- * @argv: array of strings - unused attribute
+ * main - prints all arguments
+ * @argc: # of arguments
+ * @argv: array of arguments (strings)
  * Return: void
  */
 int main(int argc, char *argv[])
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
 	for (counter = 0; counter < argc; counter++)
 	{
-		printf("%d: %s\n", i, argv[counter]);
+		printf("%d: %s\n", counter, argv[counter]);
 	}
-	return(0);
+	return (0);
 }
