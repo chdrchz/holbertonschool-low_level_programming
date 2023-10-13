@@ -6,9 +6,12 @@
  * @argv: array of arguments (string)
  * Return: void
  */
-int main(int argc, int mult1, int mult2, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
-	printf("%d * %d\n", mult1, mult2);
+	int number_One = argv[1];
+	int number_Two = argv[2];
+
+	printf("%d * %d\n", number_One, number_Two);
 	
 	return (0);
 }
