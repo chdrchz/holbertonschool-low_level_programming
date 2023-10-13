@@ -14,4 +14,6 @@ int main(int argc, char *argv[])
 		printf("%s", argv[counter]);
 	}
 	printf("\n");
+
+	return (0);
 }
