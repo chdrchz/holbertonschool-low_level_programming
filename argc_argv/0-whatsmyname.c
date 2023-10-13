@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * main - prints all arguments
- *
+ * @argc: size of argv
+ * @argv: array of strings
  * Return: void
  */
 int main(int argc, char *argv[])
