@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	}
 
-	for (counter = 1; counter < argc, counter++)
+	for (counter = 1; counter < argc; counter++)
 	{
 		number = atoi(argv[counter]);
 		
