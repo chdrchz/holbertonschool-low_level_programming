@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	int result_Of_Mult = number_One * number_Two;
 	
-	if (argc >= 3)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
