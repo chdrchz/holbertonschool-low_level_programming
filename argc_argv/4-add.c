@@ -8,7 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int counter, number, sum_Of_Numbers;
+	int counter, number;
+	int sum_Of_Numbers = 0;
 
 	if (argc < 2)
 	{
