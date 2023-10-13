@@ -6,8 +6,14 @@
  * @argv: array of arguments (string)
  * Return: void
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
+	if (argc >= 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	
 	int number_One = atoi(argv[1]);
 	int number_Two = atoi(argv[2]);
 
