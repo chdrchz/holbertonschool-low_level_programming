@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
     int counter;
     long number; 
-    int sum_Of_Numbers = 0;
+    long sum_Of_Numbers = 0;
 
     if (argc < 2)
     {
