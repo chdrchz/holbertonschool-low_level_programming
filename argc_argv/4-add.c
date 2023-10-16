@@ -17,7 +17,8 @@ printf("0\n");
 return 0;
 }
 
-int sum_Of_Numbers = 0;
+int sum_Of_Numbers;
+sum_Of_Numbers = 0;
 
 for (counter = 1; counter < argc; counter++)
 {
