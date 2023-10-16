@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
         {
             if (!isdigit(*endptr) && !(endptr == argv[counter]))
             {
-                printf("Error: Not a valid integer\n");
+                printf("Error\n");
                 return 1;
             }
             endptr++;
@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
 
         if (number < 0 || (number < 48 && number > 57))
         {
-            printf("Error: Number out of range\n");
             return 1;
         }
 
