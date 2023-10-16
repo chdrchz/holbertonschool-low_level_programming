@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
 
 	for (counter = 1; counter < argc; counter++)
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			if (!isdigit(*endptr) && !(endptr == argv[counter]))
 			{
 			printf("Error\n");
-			return 1;
+			return (1);
 			}
 		endptr++;
 		}
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
 	if (number < 0 || (number < 48 && number > 57))
 	{
-	return 1;
+	return (1);
 	}
 
 	sum_Of_Numbers += number;
@@ -45,5 +45,5 @@ int main(int argc, char *argv[])
 
 	printf("%ld\n", sum_Of_Numbers);
 
-	return 0;
+	return (0);
 }
