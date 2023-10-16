@@ -10,15 +10,13 @@ int main(int argc, char *argv[])
 {
 int counter;
 long number;
+int sum_Of_Numbers = 0;
 
 if (argc < 2)
 {
 printf("0\n");
 return 0;
 }
-
-int sum_Of_Numbers;
-sum_Of_Numbers = 0;
 
 for (counter = 1; counter < argc; counter++)
 {
