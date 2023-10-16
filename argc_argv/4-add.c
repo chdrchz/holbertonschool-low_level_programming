@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int counter;
-	long number; 
+	long number;
 	long sum_Of_Numbers = 0;
 
 	if (argc < 2)
