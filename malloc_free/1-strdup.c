@@ -3,14 +3,14 @@
 #include "_strlen.c"
 /**
  * *_strdup - duplicates a string in memory
- *
+ * @str: string to be copied in memory
  * Return: pointer to array
  */
 char *_strdup(char *str)
 {
 	int i;
 	char *char_array;
-	
+
 	if (!str)
 	{
 		return (0);
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 	{
 		return (0);
 	}
-	
+
 	for (i = 0; i <= _strlen(str); i++)
 	{
 		char_array[i] = str[i];
