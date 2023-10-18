@@ -12,13 +12,13 @@ char *str_concat(char *s1, char *s2)
 	int j;
 	char *char_array;
 
-	if (_strlen(s1) == 0)
+	if (!s1)
 	{
-		return (0);
+		s1 = "";
 	}
-	if (_strlen(s2) == 0)
+	if (!s2)
 	{
-		return (0);
+		s2 = "";
 	}
 	char_array = malloc(_strlen(s1) + _strlen(s2) + 1);
 
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		}
 		for (j = 0; j <= _strlen(s2); j++)
 		{
-			char_array[j] = s2[j];
+			char_array[i] = s2[j];
 			i++;
 		}
 
