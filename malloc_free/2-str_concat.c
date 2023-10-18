@@ -8,6 +8,12 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	size_t length_1;
+	size_t length_2;
+	char *char_array;
+	size_t i;
+	size_t j;
+
     if (!s1)
     {
         s1 = "";
@@ -17,14 +23,12 @@ char *str_concat(char *s1, char *s2)
         s2 = "";
     }
 
-    size_t length_1 = strlen(s1);
-    size_t length_2 = strlen(s2);
-    char *char_array = (char *)malloc(length_1 + length_2 + 1);
+    length_1 = strlen(s1);
+    length_2 = strlen(s2);
+    char_array = (char *)malloc(length_1 + length_2 + 1);
 
     if (char_array)
     {
-        size_t i, j;
-
         for (i = 0; i < length_1; i++)
         {
             char_array[i] = s1[i];
