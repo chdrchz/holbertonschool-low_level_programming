@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 #include "3-alloc_grid.c"
 /**
@@ -5,8 +6,6 @@
  *
  * Return: void
  */
-int **alloc_grid(int width, int height);
-
 void free_grid(int **grid, int height)
 {
 	int counter;
