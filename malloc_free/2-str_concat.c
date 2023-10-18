@@ -12,11 +12,11 @@ char *str_concat(char *s1, char *s2)
 	int j;
 	char *char_array;
 
-	if (*s1 == ' ')
+	if (_strlen(s1) == 0)
 	{
 		return (0);
 	}
-	if (*s2 == ' ')
+	if (_strlen(s2) == 0)
 	{
 		return (0);
 	}
