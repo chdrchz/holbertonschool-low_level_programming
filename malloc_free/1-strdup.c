@@ -10,9 +10,8 @@ char *_strdup(char *str)
 {
 	int length = _strlen(str);
 	int i;
-	char *new_array;
 	
-	char *char_array = malloc(sizeof(str) * length + 1);
+	char *char_array = malloc(sizeof(char) * length + 1);
 	
 	if (str == NULL)
 	{
@@ -21,11 +20,10 @@ char *_strdup(char *str)
 	
 	for (i = 0; i < length; i++)
 	{
-		char_array[i] = *new_array;
+		char_array[i] = str[i];
 	}
+	
+	char_array[length] = '\0';
 
-	return (new_array);
-
-	free(new_array);
-
+	return (char_array);
 }
