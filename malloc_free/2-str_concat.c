@@ -11,6 +11,8 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	int j;
 	char *char_array;
+	length_1 = _strlen(s1);
+	length_2 = _strlen(s2);
 
 	if (!s1)
 	{
@@ -20,16 +22,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	char_array = malloc(_strlen(s1) + _strlen(s2) + 1);
+	char_array = (char *)malloc(length_1 + length_2 + 1);
 
 	if (char_array)
 	{
 	
-		for (i = 0; i <= _strlen(s1); i++)
+		for (i = 0; i <= length_1; i++)
 		{
 			char_array[i] = s1[i];
 		}
-		for (j = 0; j <= _strlen(s2); j++)
+		for (j = 0; j <= length_2; j++)
 		{
 			char_array[i] = s2[j];
 			i++;
