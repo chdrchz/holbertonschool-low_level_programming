@@ -7,12 +7,17 @@
  */
 char *create_array(unsigned int size, char c)
 {
+	if (size == 0)
+	{
+		return (NULL);
+	}
+	
 	char *char_array = (char*) malloc(sizeof(char) * size);
 	unsigned int i;
 
-	if (size == 0)
+	if (char_array == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	
 	for (i = 0; i < size; i++)
