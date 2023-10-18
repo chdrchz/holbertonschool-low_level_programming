@@ -23,8 +23,8 @@ char *str_concat(char *s1, char *s2)
         s2 = "";
     }
 
-    length_1 = strlen(s1);
-    length_2 = strlen(s2);
+    length_1 = _strlen(s1);
+    length_2 = _strlen(s2);
     char_array = (char *)malloc(length_1 + length_2 + 1);
 
     if (char_array)
