@@ -42,10 +42,10 @@ char *str_concat(char *s1, char *s2)
 		}
 
 		char_array[i] = '\0';
-		return char_array;
+		return (char_array);
 	}
 	else
 	{
-		return NULL;
+		return (NULL);
 	}
 }
