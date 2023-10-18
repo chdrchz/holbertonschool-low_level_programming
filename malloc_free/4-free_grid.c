@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "main.h"
-#include "3-alloc_grid.c"
 /**
  * free_grid - freeing the previously allocated grid
  *
