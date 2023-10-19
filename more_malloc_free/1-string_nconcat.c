@@ -19,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 
 	length_1 = _strlen(s1);
-	lenght_2 = _strlen(s2);
+	length_2 = _strlen(s2);
 	
 	if (n >= length_2)
 		n = length_2;
