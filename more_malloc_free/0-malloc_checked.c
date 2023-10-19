@@ -10,12 +10,12 @@ void *malloc_checked(unsigned int b)
 	unsigned int i;
 	int *int_array;
 
+	int_array = malloc(sizeof(int) * b);
+
 	if (int_array == NULL)
 	{
 		return (NULL);
 	}
-
-	int_array = malloc(sizeof(int) * b);
 
 	for (i = 0; i < b; i++)
 	{
