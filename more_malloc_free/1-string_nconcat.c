@@ -11,8 +11,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str_concat;
-	int length_1, length_2, counter_1;
-	unsigned int counter_2;
+	int counter_1;
+	unsigned int counter_2, length_1, length_2;
 	length_1 = _strlen(s1);
 	length_2 = _strlen(s2);
 
