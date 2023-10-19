@@ -6,5 +6,5 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int int_array = (int *)malloc(sizeof(int) * 4);
+	int *int_array = (int *)malloc(sizeof(int) * 4);
 }
