@@ -12,13 +12,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str_concat;
 	unsigned int counter_1, counter_2, length_1, length_2;
-	length_1 = _strlen(s1);
-	length_2 = _strlen(s2);
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
+	length_1 = _strlen(s1);
+	lenght_2 = _strlen(s2);
 	
 	if (n >= length_2)
 		n = length_2;
