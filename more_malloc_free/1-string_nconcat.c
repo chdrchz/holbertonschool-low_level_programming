@@ -12,6 +12,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str_concat;
 	int length_1, length_2, counter_1, counter_2;
+	length_1 = 0;
+	length_2 = 0;
 
 	str_concat = malloc(_strlen(s1) + (_strlen(s2) - n));
 
