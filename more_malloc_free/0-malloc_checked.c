@@ -7,27 +7,11 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int i;
-	int *int_array;
+	void *ptr = malloc(b);
 
-	int_array = malloc(sizeof(int) * b);
-
-	if (int_array == NULL)
+	if (ptr == NULL)
 	{
-		return (NULL);
+		exit (98);
 	}
-
-	if (int_array)
-	{
-	
-		for (i = 0; i < b; i++)
-		{
-			int_array[i] = 0;
-		}
-		return (int_array);
-	}
-	else 
-	{
-		return (98);
-	}
+	return (ptr);
 }
