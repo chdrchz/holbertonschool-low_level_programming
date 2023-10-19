@@ -6,6 +6,8 @@
  */
 void *malloc_checked(unsigned int b)
 {
+	int i;
+
 	int *int_array = malloc(sizeof(int) * 4);
 
 	for (i = 0; i < b; i++)
