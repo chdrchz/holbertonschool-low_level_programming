@@ -3,25 +3,29 @@
 #include "main.h"
 /**
  * *array_range - allocates memory to an array of integers
- *
- * Return: pointer
+ * @min: start point for array range
+ * @max: end point for array range
+ * Return: pointer to array
  */
 int *array_range(int min, int max)
 {
 	int *int_array;
-	int size, counter_1;
-	
+	int total_size, counter_1;
+
+	total_size = (max - min);
+
 	if (min > max)
 		return (NULL);
 
-	int_array = malloc(sizeof(int) * size);
+	int_array = malloc(sizeof(int) * total_size);
 
 	if (int_array)
 	{
 		for (counter_1 = min; counter_1 < max; counter_1++)
 		{
-			return (int_array)[counter_1];
+			int_array[counter_1] = min + counter_1;
 		}
+		return (int_array);
 	}
 	else 
 		return (NULL);
