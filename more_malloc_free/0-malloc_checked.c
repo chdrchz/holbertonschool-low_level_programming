@@ -17,9 +17,17 @@ void *malloc_checked(unsigned int b)
 		return (NULL);
 	}
 
-	for (i = 0; i < b; i++)
+	if (int_array)
 	{
-		int_array[i] = 0;
+	
+		for (i = 0; i < b; i++)
+		{
+			int_array[i] = 0;
+		}
+		return (int_array);
 	}
-	return (int_array);
+	else 
+	{
+		return (98);
+	}
 }
