@@ -7,20 +7,19 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int counter_1;
+	unsigned int counter_1, total_size;
 	
 	if (nmemb <= 0 || size <= 0)
-	{
 		return (NULL);
-	}
 	
-	void *my_array = malloc(sizeof(nmemb) * size);
+	total_size = (nmemb * size)
+	void *my_array = malloc(total_size)
 
 	if (my_array)
 	{
-		for (counter_1 = 0; counter_1 < size; counter_1++)
+		for (counter_1 = 0; counter_1 < total_size; counter_1++)
 		{
-			my_array[counter_1] = nmemb;
+			(char *)my_array[counter_1] = 0;
 		}
 		return (my_array);
 	}
