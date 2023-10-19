@@ -27,6 +27,6 @@ int *array_range(int min, int max)
 		}
 		return (int_array);
 	}
-	else 
+	else
 		return (NULL);
 }
