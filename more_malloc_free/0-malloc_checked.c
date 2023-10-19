@@ -12,7 +12,7 @@ void *malloc_checked(unsigned int b)
 
 	for (i = 0; i < b; i++)
 	{
-		int_array[i] = b[i];
+		b = int_array[i];
 	}
 	return (int_array);
 }
