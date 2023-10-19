@@ -12,8 +12,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb <= 0 || size <= 0)
 		return (NULL);
 	
-	total_size = (nmemb * size)
-	void *my_array = malloc(total_size)
+	total_size = (nmemb * size);
+	void *my_array = malloc(total_size);
 
 	if (my_array)
 	{
