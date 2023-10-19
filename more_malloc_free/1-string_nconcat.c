@@ -11,11 +11,15 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str_concat;
-	int length_1, length_2, counter_1, counter_2;
+	int length_1, length_2, counter_1;
+	unsigned int counter_2;
 	length_1 = _strlen(s1);
 	length_2 = _strlen(s2);
 
-	str_concat = malloc(length_1 + (length_2 - n));
+	if (n >= length_2)
+		n = length_2;
+	
+	str_concat = malloc(length_1 + (length_2 + 1));
 
 	if (str_concat)
 	{
@@ -23,16 +27,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			str_concat[counter_1] = s1[counter_1];
 		}
-		for (counter_2 = 0; counter_2 < length_2; counter_2++)
+		for (counter_2 = 0; counter_2 < n; counter_2++)
 		{
-			str_concat[counter_2] = s2[counter_2];
+			str_concat[counter_1] = s2[counter_2];
 			counter_1++;
 		}
-		str_concat[counter_2] = '\0';
+		str_concat[counter_1] = '\0';
 		return (str_concat);
 	}
 	else 
-	{
 		return (NULL);
-	}
 }
