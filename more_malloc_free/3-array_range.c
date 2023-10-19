@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 	{
 		for (counter_1 = min; counter_1 < max; counter_1++)
 		{
-			return (int_array[counter_1]);
+			return (int_array)[counter_1];
 		}
 	}
 	else 
