@@ -2,19 +2,20 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * *_calloc - ?
- *
- * Return: ?
+ * *_calloc - allocates memory of an unkown data type and unkown size
+ * @nmemb: data type to be inputted
+ * @size: size of data type
+ * Return: pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int counter_1;
 	size_t total_size;
 	void *my_array;
-	
+
 	if (nmemb <= 0 || size <= 0)
 		return (NULL);
-	
+
 	total_size = (nmemb * size);
 	my_array = malloc(total_size);
 
@@ -26,6 +27,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		}
 		return (my_array);
 	}
-	else 
+	else
 		return (NULL);
 }
