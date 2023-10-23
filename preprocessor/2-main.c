@@ -2,11 +2,9 @@
 #include <stdio.h>
 /**
  * main - printing the name of the file from which it was compiled
- * @argc: name of arguments
- * @argv: number of arguments
  * Return: int
  */
-int main(int argc, char *argv[])
+int main(void)
 {
 	printf("%s\n", __FILE__);
 
