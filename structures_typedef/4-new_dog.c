@@ -22,9 +22,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	new_doggy->owner = (char *)malloc(strlen(owner) + 1);
-	if (new_doggy-> == NULL)
+	if (new_doggy->owner == NULL)
 	{
-		free (new_doggy->name)
+		free (new_doggy->name);
 		free (new_doggy);
 		return (NULL);
 	}
