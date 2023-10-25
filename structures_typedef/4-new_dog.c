@@ -4,7 +4,9 @@
 #include <stdlib.h>
 /**
  * *new_dog - creates a new dog
- *
+ * @age: age of doggo
+ * @owner: owner of doggo
+ * @name: name of doggo
  * Return: dog_t
  */
 dog_t *new_dog(char *name, float age, char *owner)
