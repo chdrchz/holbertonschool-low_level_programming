@@ -6,21 +6,18 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
+	int counter;
+
 	if (array != NULL && cmp != NULL)
 	{
-		cmp(size);
-
-		if (cmp != 0)
+		for (counter = 0; counter < size; counter++)
 		{
-			return(int_index);
-		}
-		if (cmp == NULL)
-		{
-			return(-1);
-		}
-		if (size <= 0)
-		{
-			return(-1);
+			if (cmp(array[counter]) == 0)
+			{
+				return (counter);
+			}
 		}
 	}
+
+	return (-1);
 }
