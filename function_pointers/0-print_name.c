@@ -11,8 +11,7 @@ void print_name(char *name, void (*f)(char *))
 
 	while (name[counter] != '\0')
 	{
-		f(name[counter]);
+		(char *)f(name[counter]);
 		counter++;
 	}
-
 }
