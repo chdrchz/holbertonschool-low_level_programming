@@ -7,11 +7,13 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	int counter = 0;
+	int counter;
 
-	while (name[counter] != '\0')
+	if (_strlen(name) != '\0')
 	{
-		f(&name[counter]);
-		counter++;
+		for (counter = 0; counter <_strlen(name); counter++)
+		{
+			f(&name[counter]);
+		}
 	}
 }
