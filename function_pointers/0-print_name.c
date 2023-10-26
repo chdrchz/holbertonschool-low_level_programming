@@ -1,5 +1,6 @@
 #include "function_pointers.h"
 #include "_putchar.c"
+#include "_strlen.c"
 /**
  * print_name - prints a name
  *
