@@ -11,8 +11,7 @@ void print_name(char *name, void (*f)(char *))
 	if (name != NULL && f != NULL)
 	{
 		int counter = 0;
-		int length;
-		length = _strlen(name);
+		int length = _strlen(name);
 	}
 
 	while (counter < length)
