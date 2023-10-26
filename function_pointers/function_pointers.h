@@ -3,6 +3,7 @@
 
 int _putchar(char c);
 void (*f)(char *);
+int _strlen(char *s);
 void print_name(char *name, void (*f)(char *));
 
 #endif
