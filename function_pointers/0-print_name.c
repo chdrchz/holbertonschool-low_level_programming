@@ -1,21 +1,18 @@
 #include "function_pointers.h"
 #include "_putchar.c"
 /**
- * print_name - ?
+ * print_name - prints a name
  *
  * Return: void
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f(char);
-}
+	int counter = 0;
 
-void (*f)(char *)
-{	
-	int counter;
-
-	if (counter = 0; counter < name; counter++)
+	while (name[counter] != '\0')
 	{
-		_putchar(char);
+		f(name[counter]);
+		counter++;
 	}
+
 }
