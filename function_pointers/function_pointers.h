@@ -1,6 +1,7 @@
 #ifndef MAIN
 #define MAIN
 
+size_t;
 int _putchar(char c);
 void (*f)(char *);
 int _strlen(char *s);
