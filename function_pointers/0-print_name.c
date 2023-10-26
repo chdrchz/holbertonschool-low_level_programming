@@ -8,7 +8,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	int counter;
+	int counter, length;
 	length = _strlen(name);
 
 	while (name < length)
