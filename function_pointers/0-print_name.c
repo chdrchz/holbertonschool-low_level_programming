@@ -8,9 +8,11 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	while (name != '\0')
+	int counter, length;
+	length = _strlen(name);
+
+	for (counter = 0; counter < length; counter++)
 	{
-		f(*name);
-		name++;
+		f(&name[counter]);
 	}
 }
