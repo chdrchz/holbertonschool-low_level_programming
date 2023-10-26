@@ -11,7 +11,7 @@ void print_name(char *name, void (*f)(char *))
 	int counter, length;
 	length = _strlen(name);
 
-	for (counter = 0; counter < length; counter++)
+	for (counter = 1; counter <= length; counter++)
 	{
 		f(&name[counter]);
 	}
