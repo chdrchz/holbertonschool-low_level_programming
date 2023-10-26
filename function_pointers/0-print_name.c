@@ -12,11 +12,11 @@ void print_name(char *name, void (*f)(char *))
 	{
 		int counter = 0;
 		int length = _strlen(name);
-	}
 
-	while (counter < length)
-	{
-		f(&name[counter]);
-		counter++;
+		while (counter < length)
+		{
+			f(&name[counter]);
+			counter++;
+		}
 	}
 }
