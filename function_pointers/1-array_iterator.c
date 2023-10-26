@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdeff.h>
 /**
  * array_iterator - iterates through an array
  *
@@ -6,8 +7,13 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+	size_t i;
+
 	if (array != NULL && action != NULL)
 	{
-		action(size_t size);
+		for (i = 0; i < size; i++)
+		{
+			action(array[i]);
+		}
 	}
 }
