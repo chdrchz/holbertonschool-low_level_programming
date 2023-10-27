@@ -1,7 +1,9 @@
 #include "function_pointers.h"
 /**
  * int_index - finds an int in an array of integers
- *
+ * @array: array
+ * @size: size
+ * @cmp: function
  * Return: int
  */
 int int_index(int *array, int size, int (*cmp)(int))
