@@ -10,7 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2, result, operand;
+	int num1, num2, result;
+	int operand = 0;
 	int (*fun)(int, int);
 
 	if (argc != 4)
@@ -29,8 +30,8 @@ int main(int argc, char *argv[])
 		return (99);
 	}
 
-	if ((operand == '/') && (num2 == 0) ||
-		(operand == '%') && (num2 == 0))
+	if ((operand == '/' && num2 == 0) ||
+		(operand == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		return (100);
