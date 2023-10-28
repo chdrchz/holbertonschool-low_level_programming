@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error\n")
+		printf("Error\n");
 		return (98);
 	}
 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
 	if (fun == NULL)
 	{
-		printf("Error\n")
+		printf("Error\n");
 		return (99);
 	}
 
