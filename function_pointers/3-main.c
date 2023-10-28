@@ -24,17 +24,17 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 	fun = get_op_func(argv[2]);
 
+	if ((operand == '/' && num2 == 0) ||
+                (operand == '%' && num2 == 0))
+        {
+                printf("Error\n");
+                return (100);
+        }
+
 	if (fun == NULL)
 	{
 		printf("Error\n");
 		return (99);
-	}
-
-	if ((operand == '/' && num2 == 0) ||
-		(operand == '%' && num2 == 0))
-	{
-		printf("Error\n");
-		return (100);
 	}
 
 	result = fun(num1, num2);
