@@ -10,22 +10,28 @@
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2, operand;
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	operand = atoi(argv[2]);
-	if (argc != 4)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (98);
 	}
-	if (get_op_func((char *)operand) == NULL || operand[1] != '\0')
+
+	int num1, num2, result;
+	char operand;
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	operand = argv[0][2];
+
+	if (strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
 		return (99);
 	}
-	if (operand == '/' && num2 == 0) ||
-		(operand == '%' && num2 == 0)
+	if (operand != '+') &&
+		(operand != '-') &&
+		(operand != '*') &&
+		(operand != '/') &&
+		(operand != '%');
 	{
 		printf("Error\n");
 		return (100);
