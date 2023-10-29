@@ -30,7 +30,8 @@ int main(int argc, char *argv[])
                 return (100);
         }
 
-	if (fun == NULL)
+	if (fun == NULL) ||
+		(argv[2] > 3)
 	{
 		printf("Error\n");
 		return (99);
