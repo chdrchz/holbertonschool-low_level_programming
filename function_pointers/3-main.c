@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
                 return (100);
         }
 
-	if (fun == NULL || strlen(argv[2]) > 3)
+	if (fun == NULL || strlen(argv[2]) > 1)
 	{
 		printf("Error\n");
 		return (99);
