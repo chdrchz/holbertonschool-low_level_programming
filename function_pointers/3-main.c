@@ -25,11 +25,11 @@ int main(int argc, char *argv[])
 	fun = get_op_func(argv[2]);
 
 	if ((argv[2][0] == '/' && num2 == 0) ||
-                (argv[2][0] == '%' && num2 == 0))
-        {
-                printf("Error\n");
-                return (100);
-        }
+		(argv[2][0] == '%' && num2 == 0))
+	{
+		printf("Error\n");
+		return (100);
+	}
 
 	if (fun == NULL || strlen(argv[2]) > 1)
 	{
