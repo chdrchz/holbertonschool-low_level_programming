@@ -24,15 +24,15 @@ if (format == NULL)
 		switch(c_switch)
 		{
 			case 'c':{
-				printf("%s%c", char_count ? "" : ", ", va_arg(args, int));
+				printf("%s%c", char_count ? ", " : "",  va_arg(args, int));
 				break;
 			}
 			case 'i':{
-				printf("%s%d", char_count ? "" : ", ", va_arg(args, int));
+				printf("%s%d", char_count ? ", " : "", va_arg(args, int));
 				break;
 			}
 			case 'f':{
-				printf("%s%f", char_count ? "" : ", ", va_arg(args, double));
+				printf("%s%f", char_count ? ", " : "", va_arg(args, double));
 				break;
 			}
 			case 's':{
@@ -41,7 +41,7 @@ if (format == NULL)
 				{
 					str = "(nil)";
 				}
-				printf("%s%s", char_count ? "" : ", ", str);
+				printf("%s%s", char_count ? ", " : "", str);
 				break;
 			}
 		}
