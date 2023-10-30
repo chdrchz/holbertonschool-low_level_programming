@@ -39,9 +39,11 @@ void print_all(const char * const format, ...)
 			case 's': 
 			{
 				if (!str)
-					s = ("(nil)");
+				{
+					str = ("(nil)");
 					printf("%s%s", separator, str);
 				break;
+				}
 			}
 		}
 
