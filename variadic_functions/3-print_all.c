@@ -12,14 +12,16 @@ void print_all(const char * const format, ...)
     char c_switch = 0;
     char *str;
     int char_count = 0;
+    int first_arg = 1;
+    
+    va_list args;
+    va_start(args, format);
 
 if (format == NULL)
 {
 	printf("\n");
 	return;
 }
-	va_list args;
-	va_start(args, format);
 
     while ((c_switch = format[char_count]) != '\0')
     {
@@ -27,17 +29,17 @@ if (format == NULL)
         {
             case 'c':
             {
-                printf("%s%c", char_count ? ", " : "", va_arg(args, int));
+                printf("%s%c", first_arg ? ", " : "", va_arg(args, int));
                 break;
             }
             case 'i':
             {
-                printf("%s%d", char_count ? ", " : "", va_arg(args, int));
+                printf("%s%d", first_arg ? ", " : "", va_arg(args, int));
                 break;
             }
             case 'f':
             {
-                printf("%s%f", char_count ? ", " : "", va_arg(args, double));
+                printf("%s%f", first_arg ? ", " : "", va_arg(args, double));
                 break;
             }
             case 's':
@@ -47,11 +49,12 @@ if (format == NULL)
                 {
                     str = "(nil)";
                 }
-                printf("%s%s", char_count ? ", " : "", str);
+                printf("%s%s", first_arg ? ", " : "", str);
                 break;
             }
         }
-
+	
+	first_arg = 0;
         char_count++;
     }
 
