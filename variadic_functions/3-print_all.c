@@ -13,14 +13,13 @@ void print_all(const char * const format, ...)
     char *str;
     int char_count = 0;
 
-    va_list args;
-    va_start(args, format);
-
 if (format == NULL)
 {
 	printf("\n");
 	return;
 }
+	va_list args;
+	va_start(args, format);
 
     while ((c_switch = format[char_count]) != '\0')
     {
