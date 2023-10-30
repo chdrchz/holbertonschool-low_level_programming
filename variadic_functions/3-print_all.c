@@ -9,6 +9,11 @@
  */
 void print_all(const char * const format, ...)
 {
+	if (format == NULL)
+	{
+		return;
+	}
+	
     char c_switch = 0;
     char *str;
     int char_count = 0;
