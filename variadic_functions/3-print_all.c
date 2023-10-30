@@ -17,6 +17,11 @@ void print_all(const char * const format, ...)
 	va_list args;
 	va_start(args, format);
 
+	if (format == NULL)
+	{
+		return;
+	}
+
 	while ((c_switch = format[char_count]) != '\0')
 	{
 		switch(c_switch)
@@ -43,11 +48,8 @@ void print_all(const char * const format, ...)
 				{
 					str = ("(nil)");
 				}
-				if (str)
-				{
-					printf("%s%s", separator, str);
-					break;
-				}
+				printf("%s%s", separator, str);
+				break;
 			}
 		}
 
