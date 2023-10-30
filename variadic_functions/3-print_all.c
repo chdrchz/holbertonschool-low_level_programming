@@ -9,13 +9,13 @@
  */
 void print_all(const char * const format, ...)
 {	
-    char c_switch = 0;
-    char *str;
-    int char_count = 0;
-    int first_arg = 1;
-    
-    va_list args;
-    va_start(args, format);
+char c_switch = 0;
+char *str;
+int char_count = 0;
+int first_arg = 1;
+
+va_list args;
+va_start(args, format);
 
 if (format == NULL)
 {
@@ -23,41 +23,41 @@ if (format == NULL)
 	return;
 }
 
-    while ((c_switch = format[char_count]) != '\0')
-    {
-        switch(c_switch)
-        {
-            case 'c':
-            {
-                printf("%s%c", first_arg ? "" : ", ", va_arg(args, int));
-                break;
-            }
-            case 'i':
-            {
-                printf("%s%d", first_arg ? "" : ", ", va_arg(args, int));
-                break;
-            }
-            case 'f':
-            {
-                printf("%s%f", first_arg ? "" : ", ", va_arg(args, double));
-                break;
-            }
-            case 's':
-            {
-                str = va_arg(args, char *);
-                if (!str)
-                {
-                    str = "(nil)";
-                }
-                printf("%s%s", first_arg ? "" : ", ", str);
-                break;
-            }
-        }
+	while ((c_switch = format[char_count]) != '\0')
+	{
+		switch(c_switch)
+		{
+			case 'c':
+			{
+				printf("%s%c", first_arg ? "" : ", ", va_arg(args, int));
+				break;
+			}
+			case 'i':
+			{
+				printf("%s%d", first_arg ? "" : ", ", va_arg(args, int));
+				break;
+			}
+			case 'f':
+			{
+				printf("%s%f", first_arg ? "" : ", ", va_arg(args, double));
+				break;
+			}
+			case 's':
+			{
+				str = va_arg(args, char *);
+				if (!str)
+				{
+					str = "(nil)";
+				}
+				printf("%s%s", first_arg ? "" : ", ", str);
+				break;
+			}
+		}
 	
-	first_arg = 0;
-        char_count++;
-    }
+		first_arg = 0;
+		char_count++;
+	}
 
-    va_end(args);
-    printf("\n");
+	va_end(args);
+	printf("\n");
 }
