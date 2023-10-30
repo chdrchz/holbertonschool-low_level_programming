@@ -43,8 +43,11 @@ void print_all(const char * const format, ...)
 				{
 					str = ("(nil)");
 				}
+				if (str)
+				{
 					printf("%s%s", separator, str);
 					break;
+				}
 			}
 		}
 
