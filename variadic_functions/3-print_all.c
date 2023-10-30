@@ -16,10 +16,10 @@ void print_all(const char * const format, ...)
     va_list args;
     va_start(args, format);
 
-        if (format == NULL)
-	{
-		return;
-	}
+if (format == NULL)
+{
+	return;
+}
 
     while ((c_switch = format[char_count]) != '\0')
     {
