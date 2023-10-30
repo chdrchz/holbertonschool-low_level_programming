@@ -24,19 +24,19 @@ void print_all(const char * const format, ...)
 			case 'c':
 			{
 				ch = va_arg(args, int);
-				printf("%c", ch);
+				printf("%c, ", ch);
 				break;
 			}
 			case 'i':
 			{
 				integer = va_arg(args, int);
-				printf("%d", integer);
+				printf("%d, ", integer);
 				break;
 			}
 			case 'f': 
 			{
 				f = va_arg(args, double);
-				printf("%f", f);
+				printf("%f, ", f);
 				break;
 			}
 			case 's': 
@@ -48,7 +48,7 @@ void print_all(const char * const format, ...)
 				}
 				if (str != NULL)
 				{
-					printf("%s", str);
+					printf("%s, ", str);
 				}
 				break;
 			}
