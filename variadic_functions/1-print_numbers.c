@@ -10,17 +10,17 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	if (separator == NULL)
-	{
-		return;
-	}
-	
 	unsigned int i;
 	int k;
 	
 	va_list args;
 	
 	va_start(args, n);
+
+	if (separator == NULL)
+	{
+		return;
+	}
 
 	for (i = 0; i < n; i++)
 	{
