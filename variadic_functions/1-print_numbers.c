@@ -11,8 +11,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	const char* no_separator = "";
-	const char* sep_candidate;
+	int j;
 
 	va_list args;
 	
@@ -25,19 +24,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		sep_candidate = va_arg(args, const char*);
-
-		if (sep_candidate != no_separator)
+		if (i > 0)
 		{
-			separator = sep_candidate;
+			printf("%s", separator);
 		}
-		else
-		{
-			int j = va_arg(args, int);
-			printf("%d%s", j, separator);
-		}
+		
+		j = va_arg(args, int);
+		printf("%d", j);
 	}
 	
-	printf("\n");
 	va_end(args);
+	printf("\n");
 }
