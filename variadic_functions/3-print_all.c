@@ -58,7 +58,7 @@ void print_all(const char * const format, ...)
 			}
 		}
 
-		char_counter++;
+		char_count++;
 	}
 
 	va_end(args);
