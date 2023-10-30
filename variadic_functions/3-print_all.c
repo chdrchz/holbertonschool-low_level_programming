@@ -42,13 +42,17 @@ void print_all(const char * const format, ...)
 			case 's': 
 			{
 				str = va_arg(args, char *);
-				if (str == NULL)
-				{
-					printf("(nil)");
-				}
-				if (str != NULL)
+				while (str != NULL)
 				{
 					printf("%s, ", str);
+				}
+				if (str == NULL)
+				{
+					printf("(nil), ");
+				}
+				if (str == str - 1)
+				{
+					printf("%s", str);
 				}
 				break;
 			}
