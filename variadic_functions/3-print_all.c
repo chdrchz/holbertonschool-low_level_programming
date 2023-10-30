@@ -16,28 +16,23 @@ void print_all(const char * const format, ...)
     va_list args;
     va_start(args, format);
 
-    if (format == NULL)
-    {
-	    return;
-    }
-
     while ((c_switch = format[char_count]) != '\0')
     {
         switch(c_switch)
         {
             case 'c':
             {
-                printf("%s%c", char_count ? "," : "", va_arg(args, int));
+                printf("%s%c", char_count ? ", " : "", va_arg(args, int));
                 break;
             }
             case 'i':
             {
-                printf("%s%d", char_count ? "," : "", va_arg(args, int));
+                printf("%s%d", char_count ? ", " : "", va_arg(args, int));
                 break;
             }
             case 'f':
             {
-                printf("%s%f", char_count ? "," : "", va_arg(args, double));
+                printf("%s%f", char_count ? ", " : "", va_arg(args, double));
                 break;
             }
             case 's':
@@ -47,7 +42,7 @@ void print_all(const char * const format, ...)
                 {
                     str = "(nil)";
                 }
-                printf("%s%s", char_count ? "," : "", str);
+                printf("%s%s", char_count ? ", " : "", str);
                 break;
             }
         }
