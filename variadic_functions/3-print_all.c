@@ -12,6 +12,7 @@ void print_all(const char * const format, ...)
 	char c_switch = 0;
 	char *str;
 	char *separator = "";
+	int char_count = 0;
 
 	va_list args;
 	va_start(args, format);
@@ -27,31 +28,25 @@ void print_all(const char * const format, ...)
 			}
 			case 'i':
 			{
-				printf("%s%d", separator, va_arg(args, int);
+				printf("%s%d", separator, va_arg(args, int));
 				break;
 			}
 			case 'f': 
 			{
-				printf("%s%f", separator, va_arg(args, float);
+				printf("%s%f", separator, va_arg(args, float));
 				break;
 			}
 			case 's': 
 			{
 				if (!str)
 					s = ("(nil)");
-					printf("%s%s", separator, str)
+					printf("%s%s", separator, str);
 				break;
 			}
-			default:
-			{	
-				c_switch++;
-				continue;
-			}
+		}
 
 		separator = ", ";
-		c_switch++;
-
-		}
+		char_count++;
 	}
 
 	va_end(args);
