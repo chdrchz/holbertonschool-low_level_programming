@@ -29,17 +29,17 @@ if (format == NULL)
         {
             case 'c':
             {
-                printf("%s%c", first_arg ? ", " : "", va_arg(args, int));
+                printf("%s%c", first_arg ? "" : ", ", va_arg(args, int));
                 break;
             }
             case 'i':
             {
-                printf("%s%d", first_arg ? ", " : "", va_arg(args, int));
+                printf("%s%d", first_arg ? "" : ", ", va_arg(args, int));
                 break;
             }
             case 'f':
             {
-                printf("%s%f", first_arg ? ", " : "", va_arg(args, double));
+                printf("%s%f", first_arg ? "" : ", ", va_arg(args, double));
                 break;
             }
             case 's':
@@ -49,7 +49,7 @@ if (format == NULL)
                 {
                     str = "(nil)";
                 }
-                printf("%s%s", first_arg ? ", " : "", str);
+                printf("%s%s", first_arg ? "" : ", ", str);
                 break;
             }
         }
