@@ -6,12 +6,12 @@
  * @head: head node
  * @str: data in list
  * Return: On success: address of new node
- * On failure: NULL 
+ * On failure: NULL
  */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	
+
 	new_node = malloc(sizeof(list_t));
 	if (new_node)
 	{
