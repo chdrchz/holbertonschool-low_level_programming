@@ -3,7 +3,8 @@
 #include <string.h>
 /**
  * *add_node_end - adds a node at the end
- *
+ * @head: head of existing list 
+ * @str: data in list 
  * Return: On success: address of new element
  * On failure: NULL
  */
