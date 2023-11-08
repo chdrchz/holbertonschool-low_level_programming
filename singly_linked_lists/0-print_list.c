@@ -7,12 +7,12 @@
 size_t print_list(const list_t *h)
 {
 	int count = 0;
-	while (list_t != NULL)
+	
+	while (h != NULL)
 	{
-		count++;
-		printf(h->str);
-		printf(h->len);
+		printf("%d", h->data);
 		h = h->next;
+		count++;
 	}
 	return(count);
 }
