@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *add_node_end - adds a node at the end 
+ * *add_node_end - adds a node at the end
  *
  * Return: On success: address of new element
  * On failure: NULL
@@ -27,10 +27,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		*head = new_node;
 	}
-	else 
+	else
 	{
 		current = *head;
-		
+
 		while ((current->next != NULL))
 		{
 			current = current->next;
