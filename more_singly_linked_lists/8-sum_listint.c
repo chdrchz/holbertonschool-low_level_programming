@@ -6,12 +6,12 @@
  */
 int sum_listint(listint_t *head)
 {
-	listint_t current;
+	listint_t *current;
 	int sum = 0;
 
 	current = head;
 
-	if (*head == NULL)
+	if (head == NULL)
 		return (0);
 
 	while (current != NULL)
