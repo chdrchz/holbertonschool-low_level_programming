@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * *add_nodeint - adds a new node at the start
- *
+ * @head: head of list
+ * @n: data for new nodes
  * Return: On success: the address of the new node
  * On failure: NULL
  */
