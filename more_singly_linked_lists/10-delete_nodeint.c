@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * delete_nodeint_at_index - deletes node at given index
- *
+ * @head: start of list
+ * @index: index to delete node at 
  * Return: On success: 1
  * On failure: -1
  */
