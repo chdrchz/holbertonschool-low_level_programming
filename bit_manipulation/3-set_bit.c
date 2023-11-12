@@ -6,7 +6,6 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	static int value = 0;
 	unsigned long int mask;
 
 	if (index >= sizeof(unsigned long int) * 8)
