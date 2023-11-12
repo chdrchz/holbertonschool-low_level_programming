@@ -14,12 +14,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	mask = 1UL << index;
 
-	if (value == 1)
-		*n |= mask;
-	else if (value == 0)
-		*n &= ~mask;
-	else 
-		return (-1);
+	*n |= mask;
 
 	return (1);
 }
