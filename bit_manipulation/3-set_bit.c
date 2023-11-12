@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * f - ?
- *
- * Return: ?
+ * set_bit - sets bits to 1 at a given index
+ * @n: pointer to bit
+ * @index: index to set value of bits
+ * Return: On success: 1
+ * On failure: -1
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
