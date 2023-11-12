@@ -8,6 +8,9 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int shifted_num;
 	int bit_value;
+	
+	if (index < 0)
+		return (-1);
 
 	shifted_num = n >> index;
 	bit_value = shifted_num & 1;
