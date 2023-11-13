@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	}
 	if (close(file_to) == -1)
 	{
-		dprintf(STDERR_FILENO,"Error: Can't close to fd &d\n", file_to);
+		dprintf(STDERR_FILENO,"Error: Can't close to fd %d\n", file_to);
 		exit(100);
 	}
 	return (0);
