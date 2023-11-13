@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdbool.h>
 /**
  * print_binary - prints the binary representation of a number
  * @n: number to be translated to binary
@@ -8,6 +9,7 @@ void print_binary(unsigned long int n)
 {
 	int num_bits, i;
 	unsigned long int bit;
+	bool first;
 	
 	if (n == 0)
 	{
@@ -16,10 +18,10 @@ void print_binary(unsigned long int n)
 	}
 	num_bits = sizeof(n) * 8;
 
-	bool first = false;
+	first = false;
 
 	for (i = num_bits - 1; i >= 0; --i)
 	{
 		bit = (n >> i) & 1;
-	}`
+	}
 }
