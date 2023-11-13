@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * read_textfile - reads from a text file and prints it to the standard output
  * @filename: name of the file
