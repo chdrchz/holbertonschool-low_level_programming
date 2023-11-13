@@ -23,5 +23,10 @@ void print_binary(unsigned long int n)
 	for (i = num_bits - 1; i >= 0; --i)
 	{
 		bit = (n >> i) & 1;
+
+		if (bit == 1)
+			first = true;
+		if (first)
+			_putchar(bit + '0');
 	}
 }
