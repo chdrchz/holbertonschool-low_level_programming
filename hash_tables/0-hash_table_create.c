@@ -19,7 +19,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	while (iterator < new_table->size)
 	{
-		i++;
+		iterator++;
 		new_table->array[i] = NULL;
 	}
 	return (new_table);
