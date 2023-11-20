@@ -10,7 +10,10 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *current, *next;
 	unsigned long int counter;
 	int pair = 0;
-
+	
+	if (ht == NULL)
+		return;
+	
 	printf("{");
 	
 	for (counter = 0; counter < ht->size; counter++)
