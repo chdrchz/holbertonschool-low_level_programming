@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	
 	value_copy = strdup(value);
 
-	if (current == 0)
+	if (current && strcmp(key, current->key) == 0)
 	{
 		free(current->value);
 		current->value = value_copy;
