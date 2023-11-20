@@ -11,10 +11,13 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	int index;
+	char *value_copy;
 	hash_node_t *current, *new_node;
 
 	index = key_index((unsigned char *)key, ht->size);
 	current = ht->array[index];
+	
+	value_copy = strdup(value);
 
 	if (current == 0)
 	{
@@ -23,10 +26,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (1);
 	}
 
-	new_node = malloc(sizeof(hash_node_t));
-	
+	new_node = malloc(sizeof(hash_node_t));	
 	new_node->key = strdup(key);
-	new_node->value = strdup(value);
+	new_node->value = value_copy;
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
 	return (1);
