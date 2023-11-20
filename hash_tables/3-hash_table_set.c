@@ -17,7 +17,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *)key, ht->size);
 	current = ht->array[index];
 	
-	if (ht == NULL || key == NULL || strcmp(key, "") == 0)
+	if (ht == NULL || key == NULL || *key == '\0' || strcmp(key, "") == 0)
 		return (0);
 
 	value_copy = strdup(value);
