@@ -19,6 +19,9 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	current = ht->array[index];
 
+	if (index >= ht->size)
+		return (NULL);
+
 	while (current && strcmp(current->key, key) != '\0')
 		current = current->next;
 
