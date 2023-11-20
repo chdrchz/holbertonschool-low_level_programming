@@ -9,12 +9,12 @@ void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *current, *next;
 	unsigned long int counter;
+
+	printf("{");
 	
 	for (counter = 0; counter < ht->size; counter++)
 	{
 		current = ht->array[counter];
-
-		printf("{");
 
 		while (current != NULL)
 		{
