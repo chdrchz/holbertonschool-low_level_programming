@@ -14,11 +14,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *value_copy;
 	hash_node_t *current, *new_node;
 
+	if (ht == NULL || key == NULL || *key == '\0' || strcmp(key, "") == 0)
+                return (0);
+
 	index = key_index((unsigned char *)key, ht->size);
 	current = ht->array[index];
-	
-	if (ht == NULL || key == NULL || *key == '\0' || strcmp(key, "") == 0)
-		return (0);
 
 	value_copy = strdup(value);
 
