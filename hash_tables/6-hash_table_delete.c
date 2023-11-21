@@ -16,6 +16,8 @@ void hash_table_delete(hash_table_t *ht)
 		while (freer)
 		{
 			temp = freer->next;
+			free(freer->key);
+			free(freer->value);
 			free(freer);
 			freer = temp;
 		}
