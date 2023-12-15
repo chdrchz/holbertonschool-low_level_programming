@@ -1,5 +1,5 @@
-#ifndef SEARCH_ALGOS.H
-#define SEARCH_ALGOS.H
+#ifndef SEARCH_ALGOS_H
+#define SEARCH_ALGOS_H
 
 /* HEADERS */
 
